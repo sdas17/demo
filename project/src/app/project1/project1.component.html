@@ -1,0 +1,21 @@
+<div class="box">
+  <div class="input-container">
+    <input type="text" [(ngModel)]="user">
+    <label for="">Name</label>
+
+  </div>
+  <ng-container *ngIf="user !== '';else notvalid">
+  </ng-container>
+  <ng-template #notvalid>
+<h2>Please enter your name</h2>
+  </ng-template>
+
+</div>
+
+<!-- ngtemplate outlet -->
+<ng-template #showmessage let-data="datadda">
+  <h1 *ngFor="let de of data">my name is karan {{de.id}}</h1>
+</ng-template>
+<ng-container *ngTemplateOutlet="showmessage;context:{
+  datadda:searchkey
+}"></ng-container>
