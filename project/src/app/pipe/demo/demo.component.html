@@ -27,6 +27,8 @@
   <p>no data is present</p>
 
 </ng-template> -->
+{{pi | number :'1.2-3'}}
+
 <div class="product-grid">
   <div   class="product-card"  *ngFor="let product of products | slice : startIndex : endIndex">
       <h2>{{product.name }}</h2>

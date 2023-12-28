@@ -6,6 +6,7 @@ import { Component, OnChanges, SimpleChanges } from '@angular/core';
   styleUrls: ['./demo.component.scss']
 })
 export class DemoComponent  implements OnChanges{
+  pi=3.146656;
   ngOnChanges(): void {
 
   }
