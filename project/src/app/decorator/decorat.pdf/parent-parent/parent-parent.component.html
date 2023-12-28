@@ -1,0 +1,5 @@
+<h2>parent Component</h2>
+{{courses | json}}
+{{msgdata}}
+<button (click)="addbutton()">Click</button>
+<app-parent-child [displaymessage]="displaycompoent" [displaydata]="courses" (eventdata)="datadata($event)" ></app-parent-child>

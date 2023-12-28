@@ -1,0 +1,42 @@
+angular provides a way to define or assign information to component class
+which we call as meta data
+meta data
+@component ({
+  selector:'app-root',
+  templateurl:'./app.component.html',
+  styleurl:['./app.component.css']
+})
+
+@decorat is sign is @
+what is decorator
+use to pass the information
+a funcation with some logic ie.meta
+funcation exampleDecorator(params:any){
+  //code containing meta data
+}
+
+decorator is basically 4 type
+property decorator
+@input data recived parent component
+
+class decorator
+@ngModule({
+
+})
+@component({
+
+})
+@inject({
+
+})
+@pipe({
+
+})
+method decorator
+parameter decorator
+property decorator
+
+@input() parent to child
+
+
+@output() child to parent

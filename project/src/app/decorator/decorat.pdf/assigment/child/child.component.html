@@ -1,0 +1,15 @@
+<p>child works!</p>
+<table *ngFor="let data of childparent; let i = index" >
+  <th>
+
+{{data }}
+<button (click)="removedata(i)">deletebutton</button>
+
+  </th>
+</table>
+
+<!-- @viewchild  -->
+<div class="container">
+  <h2 #color>counter:{{counter}}</h2>
+
+</div>

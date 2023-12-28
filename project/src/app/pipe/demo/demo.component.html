@@ -1,0 +1,39 @@
+<!-- <p>demo works! {{showDate | date : 'dd-mm-yyyy'}}</p>
+<ng-container>
+  <div class="table-cotainer" *ngIf="showDat.length>0;else showdata">
+    {{myname | slice :0:-7
+
+      | titlecase}}
+      <br>
+      {{datademo | slice :0:3}}
+    <table border="1">
+      <tr>
+        <th>Name</th>
+        <th>Name</th>
+        <th>Name</th>
+      </tr>
+      <tr *ngFor="let data of showDat">
+        <td>{{data.name | titlecase}}</td>
+        <td>{{data.state | slice :0:7 | uppercase}}</td>
+        <td>{{data.salary | currency : 'USD'}}</td>
+
+      </tr>
+
+    </table>
+  </div>
+
+</ng-container>
+<ng-template #showdata>
+  <p>no data is present</p>
+
+</ng-template> -->
+<div class="product-grid">
+  <div   class="product-card"  *ngFor="let product of products | slice : startIndex : endIndex">
+      <h2>{{product.name }}</h2>
+      <img [src]="product.imageUrl" alt="Course Image"/>
+  </div>
+  <div class="btn-container">
+      <button type="button" (click)="previousPage()" [disabled]="startIndex ===0">Previous</button>
+      <button type="button" (click)="nextPage()" [disabled]="endIndex >=products.length">Next</button>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<!-- <div class="container">
+<div>
+  <button  (click)="addbutton()">addbutton</button>
+  <app-child  *ngIf="tabledata.length>0"   [childparent]="tabledata" (datadelte)="deleteiem($event)"></app-child>
+</div>
+</div> -->
+<!-- @VIEWCHILD EXAMPLE -->
+<button #elementref (click)="addclick()">clickviewchild</button>
+<app-child ></app-child>
+

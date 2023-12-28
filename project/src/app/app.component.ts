@@ -7,7 +7,7 @@ import { AfterContentInit, Component, DoCheck } from '@angular/core';
 })
 export class AppComponent implements AfterContentInit,DoCheck{
   ngDoCheck(): void {
-    console.log('docheck hook invoked');
+    // console.log('docheck hook invoked');
 
   }
 
@@ -15,7 +15,7 @@ export class AppComponent implements AfterContentInit,DoCheck{
   childdemo='';
   displaycompoent:boolean =false;
   ngAfterContentInit(): void {
-    console.log('ngAfterContentInit');
+    // console.log('ngAfterContentInit');
 
   }
   addbutton(){

@@ -1,0 +1,16 @@
+<h2>child Component</h2>
+<button (click)="event($event)">Click</button>
+{{displaymessage}}
+<table border="1" >
+  <th >
+    id
+  </th>
+  <th>
+    name
+  </th>
+  <tbody *ngFor="let data of displaydata" >
+    <td>{{data.id}}</td>
+    <td>{{data.name}}</td>
+
+  </tbody>
+</table>
