@@ -1,0 +1,13 @@
+<div class="container">
+  <h2>Weight Container</h2>
+  <div class="input-group">
+    <label for="WeightinPount">Enter your Weight</label>
+    <input type="text" id="WeightinPount" [(ngModel)]="WeightinPount">
+
+  </div>
+    <button (click)="convertchange()">CONVERT</button>
+<br>
+<p>Weight in kilograms : {{Weightinkg | number :'1.0-0'}}kg</p>
+
+
+</div>

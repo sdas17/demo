@@ -1,0 +1,18 @@
+<!-- <p>custom-pipe works! {{'good ' | pipeExample : 'mring'}}</p> -->
+<h2>Given Array:<span>[{{number}}]</span></h2>
+<div class="button-container">
+<button type="button" (click)="sortOrders='asc'; sortNumber()"> Sort Ascending</button>
+<button type="button" (click)=" sortOrders='desc'; sortNumber()"> Desc Ascending</button>
+
+</div>
+<div class="sorted-output" *ngIf="showlist" >
+  <h2 *ngIf="sortOrders ==='asc'">Ascending order</h2>
+  <h2 *ngIf="sortOrders ==='desc'">Desending order</h2>
+  <ul class="number-list">
+    <li *ngFor="let numbers of sortNumberdata">
+      {{numbers}}
+    </li>
+  </ul>
+
+</div>
+

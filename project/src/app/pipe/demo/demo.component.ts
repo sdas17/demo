@@ -80,4 +80,16 @@ console.log( this.startIndex+=this.pgSize, this.endIndex+=this.pgSize);
     this.endIndex+=this.pgSize;
 
   }
+  datademo=[
+{
+  name:'Dev',
+  email:'Dev@example.com',
+  address:{
+    street:'23 Main st',
+    city:'las Vegas',
+    state:'nevada',
+    zip:8090,
+  }
+}
+  ]
 }

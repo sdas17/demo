@@ -1,0 +1,11 @@
+<div class="string-count">
+  <h2>Lette count</h2>
+  <input type="text" [(ngModel)]="stringval" >
+  <label for="stringval">Enter a string</label>
+
+  <div>
+    <p style="color: blueviolet;">{{stringval | numberCount }} letters</p>
+  </div>
+  <h2>{{myarray | sumofnumber }}</h2>
+  <button (click)="addupdate()">Update</button>
+</div>

@@ -20,6 +20,12 @@ import { HighlghtelementSkipTestDirective } from './decorator/highlghtelement--s
 import { ColorPcikcerComponent } from './decorator/color-pcikcer/color-pcikcer.component';
 import { PipeExamplePipe } from './pipe/pipe-example.pipe';
 import { DemoComponent } from './pipe/demo/demo.component';
+import { ConverterComponent } from './pipe/converter/converter.component';
+import { CustomPipeComponent } from './pipe/custom-pipe/custom-pipe.component';
+import { SortnumberPipe } from './pipe/sortnumber.pipe';
+import { NumberCountComponent } from './pipe/number-count/number-count.component';
+import { NumberCountPipe } from './pipe/number-count.pipe';
+import { SumofnumberPipe } from './pipe/sumofnumber.pipe';
 
 @NgModule({
   declarations: [
@@ -39,7 +45,13 @@ import { DemoComponent } from './pipe/demo/demo.component';
     HighlghtelementSkipTestDirective,
     ColorPcikcerComponent,
     PipeExamplePipe,
-    DemoComponent
+    DemoComponent,
+    ConverterComponent,
+    CustomPipeComponent,
+    SortnumberPipe,
+    NumberCountComponent,
+    NumberCountPipe,
+    SumofnumberPipe
   ],
   imports: [
     BrowserModule,
